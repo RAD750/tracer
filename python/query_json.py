@@ -22,6 +22,7 @@ class FakePort(object):
 
 if not fake:
     ser = serial.Serial('/dev/ttyS0', 9600, timeout = 1)
+    # Remember to change this to your actual serial port!
 else:
     ser = FakePort(fake)
 
@@ -31,6 +32,7 @@ query = QueryCommand()
 t_ser.send_command(query)
 result = t_ser.receive_result()
 
+#Modifying the output to produce standard JSON.
 formatted = str(result).replace('{', '{\n"')
 formatted = formatted.replace('}', '"\n}')
 formatted = formatted.replace(': ', '":"')
