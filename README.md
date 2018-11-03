@@ -17,7 +17,7 @@ The Tracer uses an [8P8C][] connector (the same physical type of connector as
 RJ-45 Ethernet cables, but very much not an Ethernet connection).
 
 
-*WARNING*: some solar charge controllers, while having an 8P8C connector, use a different pinout, protocol and interface (RS485). These programs won't work!
+**WARNING**: some solar charge controllers, while having an 8P8C connector, use a different pinout, protocol and interface (RS485). These programs won't work!
 
 Pinout
 ------
@@ -44,9 +44,9 @@ and -3.3V is 1).
 Warning about serial ports on the Raspberry Pi
 -------
 
-Usually, the default (hardware) serial port on the Raspberry Pi is called `/dev/ttyAMA0`. This is *not* the case on the Raspberry Pi Zero W, where `/dev/ttyAMA0` does exist, but is non-functional. 
+Usually, the default (hardware) serial port on the Raspberry Pi is called `/dev/ttyAMA0`. This is *not* the case on the Raspberry Pi Zero W (and possibly others), where `/dev/ttyAMA0` does exist, but is non-functional. 
 
-You should modify the Python scripts to use `/dev/ttyS0` instead (this also applies if you are using an USB-to-UART adapter).
+If the script hangs, after checking the hardware part (connections, pinout etc.) you should modify the Python scripts to use `/dev/ttyS0` instead (this also applies if you are using an USB-to-UART adapter).
 
 Also, make sure the serial console is disabled, but the serial port is enabled (use `raspi-config` to do so, and check with `dmesg |grep tty` the results).
 
