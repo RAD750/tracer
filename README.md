@@ -4,8 +4,7 @@ Communication Interface for Tracer MT-5
 This is an Arduino and Python library for interfacing with the SainSonic Tracer
 series solar charge regulators.
 
-This was designed to work with a "SainSonic MPPT Tracer 1215RN Solar Charge
-Controller Regulator 12/24V INPUT 10A"
+I have tested both the Arduino and Python software extensively with a Raspberry Pi and an Arduino Nano on my EPSOLAR TRACER 1210RN.
 
 The protocol is described in [Protocol Tracer MT-5][tracer-doc] (copy here in
 `docs/`) and implemented in Python and Arduino. There's also a copy of the C
