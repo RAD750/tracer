@@ -44,6 +44,7 @@ The Arduino and C code is mostly incomplete and as such is placed in the
 [public domain][].
 
 The Python library is a bit more complete and is licensed under the [LGPL v3][LGPL]
+I have modified the example query so it can produce JSON output. This makes it very easy to interface it with other software.       
 
 [8P8C]: https://en.wikipedia.org/wiki/Modular_connector#8P8C
 [RS-232]: https://en.wikipedia.org/wiki/RS-232#Voltage_levels
