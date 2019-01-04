@@ -1,7 +1,7 @@
 Communication Interface for Tracer MT-5
 =======================================
 
-This is an Arduino and Python library for interfacing with the SainSonic Tracer
+This is an Arduino and Python library for interfacing with the SainSonic and EPSOLAR Tracer
 series solar charge regulators.
 
 I have tested both the Arduino and Python software extensively with a Raspberry Pi and an Arduino Nano on my EPSOLAR TRACER 1210RN.
